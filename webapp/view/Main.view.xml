@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="jg.ui5app2.controller.Main" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+    <content>
+      <List
+    id="productList"
+    items="{
+      path: '/Products'
+    }">
+    <items>
+      <ObjectListItem id="_IDGenObjectListItem1"
+        title="{ProductName}"
+        number="{QuantityPerUnit}" />
+    </items>
+  </List>
+    </content>
+    </Page>
+</mvc:View>
